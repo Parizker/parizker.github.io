@@ -1,1 +1,1 @@
-<script src="index.html"></script>
+<script src="website/index.html"></script>
