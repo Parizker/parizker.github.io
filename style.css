@@ -1,4 +1,7 @@
- nav {
+body {
+	background-color: #313437;
+}
+nav {
 	margin: 27px auto 0;
 
 	position: relative;
