@@ -1,74 +1,98 @@
-body {
-	background-color: #313437;
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-nav {
-	margin: 27px auto 0;
-
-	position: relative;
-	width: 590px;
-	height: 50px;
-	background-color: #34495e;
-	border-radius: 8px;
-	font-size: 0;
+body{
+  font-family: montserrat;
 }
-nav a {
-	line-height: 50px;
-	height: 100%;
-	font-size: 15px;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
-	cursor: pointer;
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
 }
-nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
-a:nth-child(1) {
-	width: 100px;
+nav ul{
+  float: right;
+  margin-right: 20px;
 }
-a:nth-child(2) {
-	width: 110px;
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
-a:nth-child(3) {
-	width: 100px;
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
-a:nth-child(4) {
-	width: 160px;
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
 }
-a:nth-child(5) {
-	width: 120px;
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
-nav .start-home, a:nth-child(1):hover~.animation {
-	width: 100px;
-	left: 0;
-	background-color: #1abc9c;
+#check{
+  display: none;
 }
-nav .start-about, a:nth-child(2):hover~.animation {
-	width: 110px;
-	left: 100px;
-	background-color: #e74c3c;
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
 }
-nav .start-blog, a:nth-child(3):hover~.animation {
-	width: 100px;
-	left: 210px;
-	background-color: #3498db;
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
 }
-nav .start-portefolio, a:nth-child(4):hover~.animation {
-	width: 160px;
-	left: 310px;
-	background-color: #9b59b6;
-}
-nav .start-contact, a:nth-child(5):hover~.animation {
-	width: 120px;
-	left: 470px;
-	background-color: #e67e22;
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
 }
