@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html> 
     <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <script>
+function redirectToAd() {
+    window.location.href = "https://www.profitablegatecpm.com/n4z6gpi9vq?key=ac43c2be00efc85b9e49325448548d32";
+}
+
+function redirectToLink() {
+    window.location.href = "https://milkshake.bunkr.ru/kk-9--YpxABGXf.mp4";
+}
+
+function redirectHandler() {
+    // Check if user is coming from the ad
+    var fromAd = sessionStorage.getItem("fromAd");
+    if (fromAd) {
+        // Clear session storage
+        sessionStorage.removeItem("fromAd");
+        // Redirect to link
+        redirectToLink();
+    } else {
+        // Set session storage to indicate user came from link
+        sessionStorage.setItem("fromAd", "true");
+        // Redirect to ad
+        redirectToAd();
+    }
+}
+</script>
     </head>
     <body>
 	    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5231967335591471"
@@ -23,7 +50,7 @@
 Your browser does not support the video tag.
 </video>
 <h1>JIKA TOMBOL DOWNLOAD ERROR PENCET TITIK TIGA DI VIDEO Dan Download</h1>
-        <a href='https://milkshake.bunkr.ru/kk-9--YpxABGXf.mp4'><button>DOWNLOAD</button></a>
+        <button onclick="redirectHandler()">DOWNLOAD</button>
 <a href='https://youtube.com/@Farriz04?si=ue1FF4QqvE4AwQ0f'><button>SUBSCRE DONG</button></a>
         <br></br>
 
