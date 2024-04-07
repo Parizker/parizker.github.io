@@ -174,7 +174,9 @@ button {
   object-fit: cover; /* Hindari distorsi gambar */
 }
 
-
+.plyr__ads{
+  background-color: red;
+}
 
 
 
