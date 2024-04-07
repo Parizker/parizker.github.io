@@ -1,0 +1,42 @@
+.cotainer { width: 600px; border: 2px solid #333; padding: 15px 10px; }
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1d9cf3;
+}
+
+div{
+   display: flex;
+   
+}
+
+div img{
+   width: 100%;
+   height: auto;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Atur tinggi sesuai kebutuhan */
+}
+
+div img {
+  max-width: 100%; /* Menghindari gambar keluar dari tata letak */
+  max-height: 100%; /* Menghindari gambar keluar dari tata letak */
+}
+
+
+.tl {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: none; /* Mulai dengan tombol tersembunyi */
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }

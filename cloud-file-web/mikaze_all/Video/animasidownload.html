@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <title>DownloadVideo</title>
+   <link rel="stylesheet" href="../../coment.css">
+   <script src="script.js" defer></script>
+</head>
+<body>
+   <div>
+        <img id="hidengambar" src="../../down.gif"alt="Gambar GIF Menarik">
+         <!-- Tombol yang akan muncul setelah beberapa detik -->
+    <button id="tl" class="tl">Klik Saya</button>
+   </div>
+   
+   <script>
+       const videoUrl = "https://milkshake.bunkr.ru/kk-9--YpxABGXf.mp4";
+
+// Tentukan waktu tunggu sebelum mengunduh (dalam milidetik)
+const delayTimeInMilliseconds = 3730; // Contoh: mengunduh setelah 5 detik
+
+// Fungsi untuk mengunduh video
+function downloadVideo() {
+  const anchor = document.createElement("a");
+  anchor.href = videoUrl;
+  anchor.download = "bocil_naka2.mp4"; // Ganti 'nama_video.mp4' dengan nama yang Anda inginkan
+  document.body.appendChild(anchor);
+  anchor.click();
+  document.body.removeChild(anchor);
+}
+
+// Atur waktu tunggu sebelum menjalankan fungsi downloadVideo
+setTimeout(downloadVideo, delayTimeInMilliseconds);
+
+
+
+   </script>
+ <script src="../../down.js"></script>
+ 
+</body>
+</html>

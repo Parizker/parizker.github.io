@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <title>DownloadVideo</title>
+   <link rel="stylesheet" href="../../../coment.css">
+</head>
+<body>
+   <div>
+        <img id="hidegambar" src="../../../down.gif"alt="Gambar GIF Menarik">
+        <button id="tl" class="tl">DOWNLOAD SELESAI KEMBALI KE BERANDA</button>
+   </div>
+   
+   <script>
+       const videoUrl = "https://milkshake.bunkr.ru/kk-5--gcd5KNyw.mp4";
+
+
+const delayTimeInMilliseconds = 3730; // Contoh: mengunduh setelah 5 detik
+
+function downloadVideo() {
+  const anchor = document.createElement("a");
+  anchor.href = videoUrl;
+  anchor.download = "bocil_nakal.mp4"; // Ganti dengan nama yang Anda inginkan
+  document.body.appendChild(anchor);
+  anchor.click();
+  document.body.removeChild(anchor);
+}
+
+// Atur waktu tunggu sebelum menjalankan fungsi downloadVideo
+setTimeout(downloadVideo, delayTimeInMilliseconds);
+   </script>
+   
+ <script src="../../../down.js"></script>
+</body>
+</html>
