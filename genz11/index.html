@@ -44,15 +44,19 @@
                 //jumlah video yang di tambah
                 const clickvideo1 = doc.querySelector('#vdy-1');
                 const clickvideo2 = doc.querySelector('#vdy-2');
+                const clickvideo3 = doc.querySelector('#vdy-3');
                 // Memasukkan elemen ke dalam container di index.html
                 const container = document.getElementById('cntn');
                 container.appendChild(elementToInsert);
                 //jika element di klik maka akan menuju halaman
                 clickvideo1.addEventListener('click', function() {
-                window.location.href = "content-v/list1/video-player.html";
+                window.location.href = "content-v/List1/video-player.html";
             });
             clickvideo2.addEventListener('click', function() {
                 window.location.href = "content-v/list-1-kgfc/";
+            });
+              clickvideo2.addEventListener('click', function() {
+                window.location.href = "content-v/list-2-mytt/";
             });
             })
             .catch(error => console.error('Error:', error));
