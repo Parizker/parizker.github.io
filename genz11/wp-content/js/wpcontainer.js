@@ -32,4 +32,22 @@ jumpButton.addEventListener("click", function() {
         window.location.href = "a.html"; // Mengarahkan ke halaman a.html
     });
     
-   
+   // Ambil elemen button
+const button = document.getElementById('download-btn');
+
+// Inisialisasi status button
+let isClicked = false;
+
+// Tambahkan event listener untuk button
+button.addEventListener('click', function() {
+    // Jika belum diklik sebelumnya
+    if (!isClicked) {
+        // Redirect ke halaman iklan
+        window.location.href = 'halaman-iklan.html';
+        // Ubah status menjadi sudah diklik
+        isClicked = true;
+    } else {
+        // Redirect ke halaman download
+        window.location.href = 'halaman-download.html';
+    }
+});
