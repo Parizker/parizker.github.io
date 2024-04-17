@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="theme/style.css">
+  <title>genzw</title>
+</head>
+<body>
+    <div>
+      <div class="menux">
+        
+        <div class="hamburger">
+          <input type="checkbox" name="togl" id="togl"/>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nameweb">
+          <h4><span style="color: red;">Gen</span><span style="color: purple;">ZW</span></h4>
+        </div>
+      </div>
+      <div id="drawer-menu">
+        <ul>
+          <li id="mn1"><h1>Home</h1></li>
+          <li id="mn2"><h1>Category</h1></li>
+          <li id="mn3"><h1>Country</h1></li>
+        </ul>
+      </div><div class="gangs"></div>
+      <div class="container" id="cntn">
+
+      </div>
+      <script src="script.js"></script>
+      <script src="wp-content/js/wpcontainer.js"></script>
+      <script>window.onload = function() {
+        // Mengambil konten dari w1.html
+        fetch('wp-content/html/wpcontainer.html')
+            .then(response => response.text())
+            .then(data => {
+                // Menemukan elemen yang diinginkan
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, 'text/html');
+                const elementToInsert = doc.querySelector('body');
+                //jumlah video yang di tambah
+                const clickvideo1 = doc.querySelector('#vdy-1');
+                const clickvideo2 = doc.querySelector('#vdy-2');
+                // Memasukkan elemen ke dalam container di index.html
+                const container = document.getElementById('cntn');
+                container.appendChild(elementToInsert);
+                //jika element di klik maka akan menuju halaman
+                clickvideo1.addEventListener('click', function() {
+                window.location.href = "content-v/List1/video-player.html";
+            });
+            clickvideo2.addEventListener('click', function() {
+                window.location.href = "index.2";
+            });
+            })
+            .catch(error => console.error('Error:', error));
+      };
+      </script>
+    </div>
+</body>
+</html>
