@@ -45,6 +45,7 @@
                 const clickvideo1 = doc.querySelector('#vdy-1');
                 const clickvideo2 = doc.querySelector('#vdy-2');
                 const clickvideo3 = doc.querySelector('#vdy-3');
+                const clickvideo4 = doc.querySelector('#vdy-4');
                 // Memasukkan elemen ke dalam container di index.html
                 const container = document.getElementById('cntn');
                 container.appendChild(elementToInsert);
@@ -58,6 +59,12 @@
               clickvideo3.addEventListener('click', function() {
                 window.location.href = "content-v/list-2-mytt/";
             });
+              clickvideo4.addEventListener('click', function() {
+                window.location.href = "content-v/list-3-hpdcsk/";
+            });
+
+
+              // End Element Upload
             })
             .catch(error => console.error('Error:', error));
       };
